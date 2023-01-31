@@ -1,0 +1,107 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+
+{% block head %} {% include 'inc/_head.html' %}  {% endblock %}
+
+  </head>
+  <body>
+<header class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+  {% block header %} {% include 'inc/_header.html' %}  {% endblock %}
+</header>
+
+<main>
+  {% block content %}
+
+  {% endblock %}
+
+
+</main>
+</div>
+
+
+
+
+{% block footer %}  {% include 'inc/_footer.html' %} {% endblock %}
+
+
+
+
+<div class="modal" id="feedback">
+      <div class="modal__close" data-fancybox-close=""><img src="{% static 'netcat_template/template/new_design/assets/upload/close.svg' %}" alt=""></div>
+      <div class="modal__title">Заполните форму и мы с вами свяжемся</div>
+      <div class="modal__body">
+        <form enctype="multipart/form-data" method="POST">
+{% csrf_token %}
+                   <div class="result_wrapper">
+          <div class="field">
+            <label for="name"> <img class="icon" src="{% static 'netcat_template/template/new_design/assets/upload/user.svg' %}" alt=""></label>
+            <input id="name" class="input" type="text" name="name" placeholder="Ваше имя" required="">
+          </div>
+          <div class="field">
+            <label for="phone"> <img class="icon" src="{% static 'netcat_template/template/new_design/assets/upload/phone-2.svg '%}" alt=""></label>
+            <input id="phone" class="input" type="text" name="phone" placeholder="+7 (___)- ____-__-__" required="">
+          </div>
+            <div class="field">
+            <input type="hidden" name="utm_campaign" value="{{utm_campaign}}">
+          </div>
+       </div>
+
+          <div class="field-btn">
+            <div>
+              <button class="btn pink close" type="reset" data-fancybox-close="">Отмена</button>
+            </div>
+            <div>
+              <button class="btn red" type="submit">Отправить</button>
+            </div>
+          </div>
+          <div class="field">
+            <div class="policy">Нажимая кнопку “отправить”, вы соглашаетесь с политикой конфеденциальности данного сайта</div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal" id="feedback-2">
+      <div class="modal__close" data-fancybox-close=""><img src="{% static 'netcat_template/template/new_design/assets/upload/close.svg' %}" alt=""></div>
+      <div class="modal__title">Заполните форму и мы с вами свяжемся</div>
+      <div class="modal__body">
+        <form enctype="multipart/form-data" method="POST" action="/">
+            {% csrf_token %}
+       <div class="result_wrapper">
+          <div class="field">
+            <label for="name2"> <img class="icon" src="{% static 'netcat_template/template/new_design/assets/upload/user.svg' %}" alt=""></label>
+            <input id="name2" class="input" type="text" name="f_name" placeholder="Ваше имя" required="">
+          </div>
+          <div class="field">
+            <label for="phone2"> <img class="icon" src="{% static 'netcat_template/template/new_design/assets/upload/phone-2.svg' %}" alt=""></label>
+            <input id="phone2" class="input" type="text" name="f_phone" placeholder="+7 (___)- ____-__-__" required="">
+          </div>
+       </div>
+
+          <div class="field-file" style="display:none">
+            <input type="file" name="file" id="file">
+            <label class="file" for="file"><img src="{% static 'netcat_template/template/new_design/assets/upload/file.svg' %}" alt="">Прикрепить файл</label>
+          </div>
+          <div class="field-btn">
+            <div>
+              <button class="btn pink close" type="reset" data-fancybox-close="">Отмена</button>
+            </div>
+            <div>
+              <button class="btn red" type="submit">Отправить</button>
+            </div>
+          </div>
+          <div class="field">
+            <div class="policy">Нажимая кнопку “отправить”, вы соглашаетесь с политикой конфеденциальности данного сайта</div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
+
+
+
+  </body>
+</html>

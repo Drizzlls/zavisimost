@@ -1,0 +1,665 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Страница с ссылками {% endblock %}
+{% block content %}
+      <section class="s-banner">
+        <div class="container">
+          <div class="row align-center">
+            <div class="col col-md-6 f-column align-start">
+
+              <h1 class="h1 pagetitle">Наркологическая клиника лечения всех типов зависимости</h1>
+
+                                          <div class="s-banner__subtitle">Лечение алкоголизма, наркомании в клинике проводится на анонимной основе, вся информация о результатах обследовани и лечения является строго конфиденциальной</div>
+              <button class="btn red" data-fancybox="" data-src="#feedback">Записаться на приём</button>
+            </div>
+            <div class="col col-md-6 p-xs-0">
+              <div class="s-banner__right">
+                <picture><img class="s-banner__image" src="{% static 'image/dokto.png' %}" alt="" style="margin: 0 0 2.5em 0;"></picture>
+                <div class="s-banner-list">
+                  <div class="s-banner-list__item">
+                    <div class="wrap">
+                      <div class="title">1 час</div>
+                      <div class="info">Врач приедет в&nbsp;течение часа</div>
+                    </div>
+                  </div>
+                  <div class="s-banner-list__item">
+                    <div class="wrap">
+                      <div class="title">24/7</div>
+                      <div class="info">Анонимно и&nbsp;круглосуточно</div>
+                    </div>
+                  </div>
+                  <div class="s-banner-list__item">
+                    <div class="wrap">
+                      <div class="title">100%</div>
+                      <div class="info">Бесплатная консультация</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s-main-services">
+        <div class="container">
+          <div class="row">
+            <div class="col f-column">
+              <h3 class="section__title">Наши услуги
+                <picture><img class="pulse" src="{% static 'netcat_template/template/new_design/assets/upload/pulse.svg' %}" alt=""></picture>
+              </h3>
+            </div>
+          </div>
+          <div class="row s-main-services-list">
+            <div class="col s-main-services-list__item"><div class="wrap" href="/service/vyvod-iz-zapoya/">
+                <div class="wrap__image">
+                  <picture><img class="img" src="{% static 'netcat_template/template/new_design/assets/upload/services-1.webp' %}" alt=""></picture>
+                  <div class="time">2 часа</div>
+                </div>
+                <div class="information">
+                  <div class="name">Вывод из запоя</div>
+                  <div class="price"><span>от</span> 3 500 ₽</div>
+                  <div class="info">Снятие интоксикации, регидратация, психологическая помощь</div>
+                </div></div></div>
+            <div class="col s-main-services-list__item"><div class="wrap" href="/service/vyvod-iz-zapoya/kapelnitsa-ot-zapoya/">
+                <div class="wrap__image">
+                  <picture><img class="img" src="{% static 'netcat_template/template/new_design/assets/upload/services-2.webp' %}" alt=""></picture>
+                  <div class="time">1 приём</div>
+                </div>
+                <div class="information">
+                  <div class="name">Капельница от запоя</div>
+                  <div class="price"><span>от</span> 3 500 ₽</div>
+                  <div class="info">Возможен срочный вывод из запоя на дому</div>
+                </div></div></div>
+            <div class="col s-main-services-list__item"><div class="wrap" href="/service/kodirovanie-ot-alkogolizma/">
+                <div class="wrap__image">
+                  <picture><img class="img" src="{% static 'netcat_template/template/new_design/assets/upload/services-3.webp' %}" alt=""></picture>
+                  <div class="time">Индивидуально</div>
+                </div>
+                <div class="information">
+                  <div class="name">Кодирование от алкоголизма</div>
+                  <div class="price"><span>от</span> 5 000 ₽</div>
+                  <div class="info">Физическое восстановление организма</div>
+                </div></div></div>
+            <div class="col s-main-services-list__item"><div class="wrap" href="/service/lechenie-alkogolizma/reabilitatsiya-alkogolizma/">
+                <div class="wrap__image">
+                  <picture><img class="img" src="{% static 'netcat_template/template/new_design/assets/upload/services-4.webp' %}" alt=""></picture>
+                  <div class="time">от 6 месяцев</div>
+                </div>
+                <div class="information">
+                  <div class="name">Реабилитация алкозависимых</div>
+                  <div class="price"><span>от</span> 35 000 ₽</div>
+                  <div class="info">Возможен срочный вывод из запоя на дому</div>
+                </div></div></div>
+            <div class="col s-main-services-list__item"><div class="wrap" href="/service/vyvod-iz-zapoya/narkolog-na-dom/">
+                <div class="wrap__image">
+                  <picture><img class="img" src="{% static 'netcat_template/template/new_design/assets/upload/services-5.webp' %}" alt=""></picture>
+                  <div class="time">Индивидуально</div>
+                </div>
+                <div class="information">
+                  <div class="name">Наркологическая помощь</div>
+                  <div class="price"><span>от</span> 3 500 ₽</div>
+                  <div class="info">Первичная диагностика нарколога</div>
+                </div></div></div>
+            <div class="col s-main-services-list__item"><div class="wrap" href="/service/lechenie-alkogolizma/">
+                <div class="wrap__image">
+                  <picture><img class="img" src="{% static 'netcat_template/template/new_design/assets/upload/services-6.webp' %}" alt=""></picture>
+                  <div class="time">от 1 года</div>
+                </div>
+                <div class="information">
+                  <div class="name">Амбулаторное лечение алкоголизма</div>
+                  <div class="price"><span>от</span> 5 000 ₽</div>
+                  <div class="info">Бесплатные личные или онлайн-группы</div>
+                </div></div></div>
+            <div class="col s-main-services-list__item"><div class="wrap" href="/service/lechenie-narkomanii/reabilitatsiya-narkomanii/">
+                <div class="wrap__image">
+                  <picture><img class="img" src="{% static 'netcat_template/template/new_design/assets/upload/services-7.webp' %}" alt=""></picture>
+                  <div class="time">от 6 месяцев</div>
+                </div>
+                <div class="information">
+                  <div class="name">Лечение наркомании у подростков</div>
+                  <div class="price"><span>от</span> 7 000 ₽</div>
+                  <div class="info">Индивидуальная и безопасная программа</div>
+                </div></div></div>
+            <div class="col s-main-services-list__item"><div class="wrap" href="/service/lechenie-narkomanii/ot-soli/">
+                <div class="wrap__image">
+                  <picture><img class="img" src="{% static 'netcat_template/template/new_design/assets/upload/services-8.webp' %}" alt=""></picture>
+                  <div class="time">от 6 месяцев</div>
+                </div>
+                <div class="information">
+                  <div class="name">Лечение солевой зависимости</div>
+                  <div class="price"><span>от</span> 7 000 ₽</div>
+                  <div class="info">Основной этап лечения - это прохождение реабилитации в центре</div>
+                </div></div></div>
+          </div>
+        </div>
+        <div class="s-main-services__bg"></div>
+      </section>
+
+      <section class="s-main-consult">
+        <div class="container">
+          <div class="row">
+            <div class="col col-md-6 f-column">
+              <h3 class="section__title">Анонимная и бесплатная консультация специалиста
+                <picture><img class="pulse" src="{% static 'netcat_template/template/new_design/assets/upload/pulse.svg' %}" alt=""></picture>
+              </h3>
+              <div class="section__subtitle">Опытные специалисты нашей клиники помогут найти решение именно в вашей ситуации, обратитесь прямо сейчас!</div>
+              <button class="btn red" data-fancybox="" data-src="#feedback">Заявка на консультацию</button>
+              <div class="row mt-sm-25">
+                <div class="col col-sm-6">
+                  <div class="wrap">
+                    <div class="title">24/7</div>
+                    <div class="info">Наша клиника работает круглосуточно</div>
+                  </div>
+                </div>
+                <div class="col col-sm-6">
+                  <div class="wrap">
+                    <div class="title">100%</div>
+                    <div class="info">Бесплатный подбор программы лечения</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-6 f-column">
+              <div class="wrapper__right">
+                <div class="title">Бесплатно</div>
+                <div class="subtitle">Транспортировка до клиники</div>
+                <div class="descr">К пациенту выезжает врач нарколог, применяет при необходимости, меры первичной медицинской помощи, затем сопровождает пациента на всём пути следования в клинику</div>
+              </div>
+              <div class="wrapper__image"></div>
+            </div>
+          </div>
+        </div>
+        <div class="s-main-consult__bg">
+          <div></div>
+        </div>
+      </section>
+
+      <section class="s-steps section__element blue">
+        <div class="container">
+          <div class="row align-center">
+            <div class="col col-sm-5">
+              <div class="s-steps__image">
+                <picture><img class="img" src="{% static 'image/minDoc.png' %}" alt=""></picture>
+                <div class="bg_1"></div>
+                <div class="bg_2"></div>
+                <div class="bg_3"></div>
+              </div>
+            </div>
+            <div class="col col-sm-7 f-column">
+              <h3 class="section__title">Уговорим вашего близкого на&nbsp;лечение</h3>
+              <div class="section__subtitle">Безопасная интеграция без физического воздействия
+                <picture><img class="pulse" src="{% static 'netcat_template/template/new_design/assets/upload/pulse.svg' %}" alt=""></picture>
+              </div>
+              <div class="s-steps-list">
+                <div class="s-steps-list__item">
+                  <div class="item__left">
+                    <div class="number">1</div>
+                    <div class="info">метод</div>
+                  </div>
+                  <div class="item__right">
+                    <div class="title">Беседа с наркологом в клинике</div>
+                    <div class="info">Наш специалист найдет причины, побудившие к употреблению, и выстроит диалог, учитывая индивидуальные особенности пациента</div>
+                  </div>
+                </div>
+                <div class="s-steps-list__item">
+                  <div class="item__left">
+                    <div class="number">2</div>
+                    <div class="info">метод</div>
+                  </div>
+                  <div class="item__right">
+                    <div class="title">Проведение интервенции у вас дома</div>
+                    <div class="info">Психологи приедут к вам на дом и проведут мотивационную беседу с зависимыми, практически в 100% случаев пациент соглашается на лечение</div>
+                  </div>
+                </div>
+                <div class="s-steps-list__item">
+                  <div class="item__left">
+                    <div class="number">3</div>
+                    <div class="info">метод</div>
+                  </div>
+                  <div class="item__right">
+                    <div class="title">Мотивация во время экскурсии в центр</div>
+                    <div class="info">Специалисты центра произведут зависимому экскурсию и сформируют комплекс доводов, индивидуальных для каждого пациента</div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn red" data-fancybox="" data-src="#feedback">Записаться на приём</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s-license">
+        <div class="container">
+          <div class="row">
+            <div class="col f-column">
+              <h3 class="section__title white center">Лицензии и сертификаты
+                <picture><img class="pulse" src="{% static 'netcat_template/template/new_design/assets/upload/pulse-white.svg' %}" alt=""></picture>
+              </h3>
+              <div class="s-license__carousel owl-carousel">
+                <div class="item">
+                  <picture><img class="image" src="{% static 'image/ser/1.jpg' %}" alt=""></picture>
+                </div>
+                <div class="item">
+                  <picture><img class="image" src="{% static 'image/ser/2.jpg' %}" alt=""></picture>
+                </div>
+                <div class="item">
+                  <picture><img class="image" src="{% static 'image/ser/3.jpg' %}" alt=""></picture>
+                </div>
+              </div>
+              <div class="s-license-nav carousel-nav">
+                <div class="carousel-btn prev">
+                  <svg width="17" height="12" viewbox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.469669 6.53033C0.176777 6.23744 0.176777 5.76256 0.469669 5.46967L5.24264 0.696698C5.53553 0.403805 6.01041 0.403805 6.3033 0.696698C6.59619 0.989592 6.59619 1.46447 6.3033 1.75736L2.06066 6L6.3033 10.2426C6.59619 10.5355 6.59619 11.0104 6.3033 11.3033C6.01041 11.5962 5.53553 11.5962 5.24264 11.3033L0.469669 6.53033ZM17 6.75L1 6.75L1 5.25L17 5.25L17 6.75Z" fill="white"></path>
+                  </svg>
+                </div>
+                <div class="dots"></div>
+                <div class="carousel-btn next">
+                  <svg width="17" height="12" viewbox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.5303 6.53033C16.8232 6.23744 16.8232 5.76256 16.5303 5.46967L11.7574 0.696698C11.4645 0.403805 10.9896 0.403805 10.6967 0.696698C10.4038 0.989592 10.4038 1.46447 10.6967 1.75736L14.9393 6L10.6967 10.2426C10.4038 10.5355 10.4038 11.0104 10.6967 11.3033C10.9896 11.5962 11.4645 11.5962 11.7574 11.3033L16.5303 6.53033ZM6.55671e-08 6.75L16 6.75L16 5.25L-6.55671e-08 5.25L6.55671e-08 6.75Z" fill="white"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="s-license__bg1"></div>
+        <div class="s-license__bg2"></div>
+      </section>
+      <section class="s-reviews">
+        <div class="container">
+          <div class="row">
+            <div class="col f-column">
+              <h3 class="section__title center">Мотивирующие истории
+                <picture><img class="pulse" src="{% static 'netcat_template/template/new_design/assets/upload/pulse.svg' %}" alt=""></picture>
+              </h3>
+              <div class="section__subtitle">Отзывы бывших зависимых, которые прошли у нас лечение. Здесь они делятся своими надеждами и опасениями, рассказывают о впечатлениях, полученных в процессе сотрудничества</div>
+            </div>
+          </div>
+        </div>
+        <div class="s-reviews__carousel owl-carousel">
+
+
+
+
+<div class="item ">
+  <div class="wrap">
+    <div class="name">Мария</div>
+    <div class="info">
+      <p>Вот уже пять лет я живу в алкогольном аду, который создал для меня собственный муж. С каждым днем ком проблем только увеличивался и однажды я обратилась на телефон доверия клиники «Частный медик 24». Здесь я получила необходимую мне психологическую поддержку, и мне стало намного легче, а далее записалась на прием к психотерапевту и выяснила, что мое состояние связано с созависимостью. Теперь я активно посещаю занятия, чувствую положительные перемены в себе и неимоверное облегчение. Сейчас уже вместе с врачом буду снова пробовать помочь мужу справиться с алкоголизмом, верю, что все получится. Огромное вам спасибо за ваш труд!</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="item ">
+  <div class="wrap">
+    <div class="name">Инна</div>
+    <div class="info">
+      <p>Стыдно признаться, но последние четыре года я очень сильно пила. Началось все с безобидного бокала вина, который со временем стал ритуалом, дальше стала пить больше, на работе пошли сплетни. В клинику меня привела подруга, уговорив просто попробовать. К тому времени я уже так устала от всей этой ситуации, что легко поддалась на уговоры врача и легла в стационар. Здесь со мной активно работал психотерапевт, и с его помощью я смогла справиться с алкогольной зависимостью. Теперь я знаю, что женский алкоголизм лечится, просто нужно не бояться просить о помощи. спасибо, что подарили мне новую жизнь.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="item ">
+  <div class="wrap">
+    <div class="name">Наталья Анатольевна</div>
+    <div class="info">
+      <p>Сын стал много пить, забросил бизнес, потерял семью. Сестра посоветовала обратиться в клинику «Частный медик 24», и я очень рада, что послушалась ее. Здесь сына вывели из запоя, сим начал активно работать психотерапевт, врач рассказал мне, как правильно вести себя. Общими усилиями мы смогли убедить Сашу лечиться, и ему это действительно помогло. Сын перестал пить, восстановил свое дело, начал общаться с дочкой. Не могу передать, как я счастлива снова видеть своего ребенка здоровым. трезвым и полным энергии. Огромное спасибо, что вернули покой моему материнскому сердцу и отвернули беду от нашей семьи.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="item ">
+  <div class="wrap">
+    <div class="name">Игорь Дмитриевич</div>
+    <div class="info">
+      <p>Принял решение снова закодироваться от алкоголизма, но в прошлом уже имелся неудачный опыт. Нарколог предложил мне кодирование двойной блок (вшивание и гипноз). Мне такой подход определенно помог: пить совершенно не хочется, на алкоголь реагирую совершено спокойно (нет ни позывов на рвоту, ни желания выпить). Пока метод работает безотказно, надеюсь и дальше не подведет. Огромное спасибо врачу за внимательное отношение, разъяснение сути всех процедур и аккуратную работу.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="item ">
+  <div class="wrap">
+    <div class="name">Ирина Павловна</div>
+    <div class="info">
+      <p>Большое спасибо, что спасли моего мужа от алкогольной зависимости. Он прошел полный курс реабилитации в стационаре и стал просто другим человеком (в хорошем смысле). Теперь в нашем доме больше нет места спиртному, появились планы на будущее, общие цели. Ваши врачи не только вылечили мужа, но и спасли наш брак. Еще раз огромное спасибо и дальнейшего процветания!</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="item ">
+  <div class="wrap">
+    <div class="name">Вадим</div>
+    <div class="info">
+      <p>Долгое время употреблял психотропные препараты, а потом еще и тропикамид добавил. Поначалу все было классно, но после очередной дозы я чуть не умер, хорошо, что сестра была дома и успела вызвать медиков. Пришел в себя уже в клинике, со мной стал беседовать психотерапевт и как-то постепенно я начал осознавать, что разрушаю свою жизнь. Так начался мой путь к трезвости, и сегодня я чист, за что очень благодарен врачам.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="item ">
+  <div class="wrap">
+    <div class="name">Виталий</div>
+    <div class="info">
+      <p>Обращались в клинику по поводу лечения подросткового алкоголизма. Выражаем огромную благодарность всему персоналу клиники за помощь сыну. Сейчас ситуация наладилась, он вернулся к учебе и активно наверстывает упущенное. Отдельное спасибо за курс семейной психотерапии, он помог нам на многие вещи посмотреть иначе и стать более сплоченными. Надеемся теперь у нас все будет хорошо.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="item ">
+  <div class="wrap">
+    <div class="name">Ольга Шаталова</div>
+    <div class="info">
+      <p>Хочу выразить огромную благодарность врачам клиники за предоставление круглосуточной наркологической помощи. Вызывала врача на дом ночью для отца, и остались очень довольны сервисом, да и стоимость порадовала. Очень подкупает, что врач не равнодушный, искренне интересуется состоянием пациента и уделяет ему максимум внимания. Спасибо за вашу работу.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="item ">
+  <div class="wrap">
+    <div class="name">Владимир Степанович</div>
+    <div class="info">
+      <p>Нужно было срочно выйти из состояния алкогольного опьянения, поэтому обратился за помощью к наркологам клиники «Частный медик 24». Могу сказать, что специалисты здесь просто отличные. Мне проводили процедуру вытрезвления на дому, врач прибыл на вызов очень быстро, провел очистку организма очень мягко, что позволило мне уже на следующий день чувствовать себя бодрым и работоспособным. Большое спасибо за предоставление качественных услуг.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="item ">
+  <div class="wrap">
+    <div class="name">Виктор Николаевич</div>
+    <div class="info">
+      <p>Кодировался от алкоголизма уколом в клинике. Мне все понравилось, врач подобрал препарат после обследования, никаких побочных эффектов не было. Укол работает, так как уже больше года я абсолютно не пью, хотя алкоголь регулярно попадается мне на глаза. Очень благодарен врачу за то, что он помог мне справиться с деликатной проблемой.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="item ">
+  <div class="wrap">
+    <div class="name">Сергей Семенович</div>
+    <div class="info">
+      <p>Люди моего поколения хорошо помнят, что вытрезвители старого образца и все прелести, связанные с пребыванием в них. Однако недавно мне пришлось обратиться за помощью в подобное медучреждение, правда, частное. И каково же было мое удивление, когда я увидел вполне современный стационар с приятным ремонтом. Работа врачей и персонала также на высоте. Рекомендую.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="item ">
+  <div class="wrap">
+    <div class="name">Александра</div>
+    <div class="info">
+      <p>Муж подсел на амфетамин и категорически не хотел обращаться к врачам. Его поведение резко изменилось: он забросил универ, стал раздражительным, часто пропадает из дома. Когда я попыталась поговорить с ним о лечении, ударил. Вместе со свекровью начали тайком подыскивать клинику, так и обратились сюда. Не знаю, как врачам это удалось, но Олег, все таки, прошел реабилитацию, и уже год ничего не употребляет. Большое вам спасибо за помощь и поддержку!</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="item ">
+  <div class="wrap">
+    <div class="name">Елена</div>
+    <div class="info">
+      <p>Когда сестра стала употреблять наркотики, я полностью растворилась в ее проблемах и забыла о себе. Несколько лет борьбы с чужой зависимостью превратились в кошмар наяву. В итоге я и сестре ничем толком не помогла, и себя довела практически до нервного срыва. Только обратившись в вашу клинику, поняла, что все делала неправильно. Работа с психотерапевтом очень помогла мне, мое психическое состояние стабилизировалось, я изменила свое отношение к проблеме, и теперь буду помогать сестре вместе с врачами. Спасибо!</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="item ">
+  <div class="wrap">
+    <div class="name">Светлана Николаевна</div>
+    <div class="info">
+      <p>Вначале муж стал регулярно выпивать по выходным, но как-то быстро эти посиделки переросли в запои. Они стали повторяться все чаще, сопровождались агрессивным поведением с его стороны. В один из таких запоев поведение мужа стало совсем неадекватным и я даже испугалась, что у него началась белая горячка. Вызвала нарколога на дом, и он сказал, что нужно срочно ложиться стационар. С этого дня ситуация начала меняться в лучшую сторону: муж прошел лечение в клинике, а потом закодировался. Не могу нарадоваться, что он больше не пьет и все эти ужасные алкогольные загулы уже позади. Огромная благодарность врачам и персоналу!</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="item ">
+  <div class="wrap">
+    <div class="name">Андрей</div>
+    <div class="info">
+      <p>Сын-подросток стал употреблять наркотики, и однажды прямо на наших с женой глазах у него случилась ломка. После пережитого ужаса началась наша борьба за жизнь ребенка. Так мы обратились в эту клинику, где нам предложили программу реабилитации для несовершеннолетних. Сейчас сын полностью чистый от наркотиков, лечение было анонимным, так что в дальнейшем он сможет продолжить учебу и жить нормальной жизнью. Огромное спасибо всем врачам за внимательное отношение, терпение и реальную помощь.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="item ">
+  <div class="wrap">
+    <div class="name">Екатерина Сергеевна</div>
+    <div class="info">
+      <p>Уже несколько лет мой брат инвалид-колясочник. Необходимо было перевезти его в Ростов из другого города, и я решила воспользоваться услугами клиники «Частный медик 24". Выражаю огромную благодарность санитарной бригаде за прекрасно выполненную работу. Водитель очень аккуратный, дополнительно нас сопровождал доктор, очень вежливый, тактичный. Время в дороге пролетело просто незаметно. Еще раз большое спасибо за помощь, человеческое участие и комфортные условия перевозки.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="item ">
+  <div class="wrap">
+    <div class="name">Валентин Иванович</div>
+    <div class="info">
+      <p>Закодировался в клинике «Частный медик 24» и полностью отказался от спиртного. Сначала даже не верил, что все получится, но врач сумел меня убедить в обратном. Кодировался иглоукалыванием, все прошло отлично: никакого дискомфорта и побочек. Результат меня очень удивил и порадовал, так как я смог полностью отказаться от алкоголя, спокойно присутствую на семейных праздниках, но выпить не тянет. Большое спасибо за действенную помощь.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="item ">
+  <div class="wrap">
+    <div class="name">Борис Петрович</div>
+    <div class="info">
+      <p>Обычно похмелье у меня проходит относительно легко, но в это раз стало очень плохо. Жена вызвала нарколога на дом, и он поставил мне капельницу от похмелья. Думал, что придется ехать в клинику, но все обошлось. Большое спасибо врачу, отличный специалист, внимательный, вдумчивый. На следующий день из больницы перезвонили, спросили, как я себя чувствую. Профессионализм врачей и сервис на высоком уровне, спасибо.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="item ">
+  <div class="wrap">
+    <div class="name">Влад</div>
+    <div class="info">
+      <p>Первую свою дозу употребил еще студентом, а дальше понеслось. К 30 годам испортил здоровье, учебу не закончил, нормальных друзей нет, только родители от меня не отвернулись. Именно они устроили меня на реабилитацию в клинику, где прошел реабилитацию 12 шагов. Сегодня я стал другими человеком и с ужасом вспоминаю свое наркотическое прошлое. Низкий поклон врачам за то, что так долго и упорно занимались со мной, постоянно поддерживали и направляли, без вас и родителей я бы не справился.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="item ">
+  <div class="wrap">
+    <div class="name">Михаил</div>
+    <div class="info">
+      <p>После употребление коньяка самочувствие стало резко ухудшаться, хоть и выпил не много. Не стал рисковать и вызвал и вызвал нарколога из клиники «Частный медик 24». Врач сказал, что у меня отравление некачественным спиртным и предложил госпитализацию. Как позже оказалось, помощь мне была оказана очень вовремя, так как еще немного и могла бы очень серьезно пострадать печень. Большое спасибо, что помогли сохранить здоровье.</p>
+    </div>
+  </div>
+</div>
+
+
+
+        </div>
+        <div class="s-reviews-nav carousel-nav">
+          <div class="carousel-btn prev">
+            <svg width="17" height="12" viewbox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.469669 6.53033C0.176777 6.23744 0.176777 5.76256 0.469669 5.46967L5.24264 0.696698C5.53553 0.403805 6.01041 0.403805 6.3033 0.696698C6.59619 0.989592 6.59619 1.46447 6.3033 1.75736L2.06066 6L6.3033 10.2426C6.59619 10.5355 6.59619 11.0104 6.3033 11.3033C6.01041 11.5962 5.53553 11.5962 5.24264 11.3033L0.469669 6.53033ZM17 6.75L1 6.75L1 5.25L17 5.25L17 6.75Z" fill="white"></path>
+            </svg>
+          </div>
+          <div class="dots"></div>
+          <div class="carousel-btn next">
+            <svg width="17" height="12" viewbox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.5303 6.53033C16.8232 6.23744 16.8232 5.76256 16.5303 5.46967L11.7574 0.696698C11.4645 0.403805 10.9896 0.403805 10.6967 0.696698C10.4038 0.989592 10.4038 1.46447 10.6967 1.75736L14.9393 6L10.6967 10.2426C10.4038 10.5355 10.4038 11.0104 10.6967 11.3033C10.9896 11.5962 11.4645 11.5962 11.7574 11.3033L16.5303 6.53033ZM6.55671e-08 6.75L16 6.75L16 5.25L-6.55671e-08 5.25L6.55671e-08 6.75Z" fill="white"></path>
+            </svg>
+          </div>
+        </div>
+        <picture><img class="s-reviews__quote" src="{% static 'netcat_template/template/new_design/assets/upload/quote.svg' %}" alt=""></picture>
+        <div class="s-reviews__bg"></div>
+      </section>
+      <section class="s-faq" itemscope="" itemtype="https://schema.org/FAQPage">
+        <div class="container">
+          <div class="row">
+            <div class="col f-column">
+              <h3 class="section__title center">Ответы на часто задаваемые вопросы
+                <picture><img class="pulse" src="netcat_template/template/new_design/assets/upload/pulse.svg" alt=""></picture>
+              </h3>
+              <div class="section__subtitle">Наши специалисты ответят на любой вопрос на бесплатной консультации</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col f-column">
+              <div class="accordion-list">
+                <div class="item accordion" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="accordion__header" itemprop="name">Я пью только пиво, но почти каждый день. Моей социальной и профессиональной жизни это никак не мешает! Можно ли это считать проблемой?<span class="caret"></span></div>
+                  <div class="accordion__description" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div itemprop="text">Увы, но да: пристрастие к пиву поначалу не выглядит опасным, но со временем может принести много проблем. Лучше обратиться к врачу до того, как личная и профессионалная жизнь начнет страдать от пагубного пристрастия.</div></div>
+                </div>
+                <div class="item accordion" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="accordion__header" itemprop="name">Мой знакомый сам бросил пить, и больше ни разу не сорвался. Так ли нужно обращаться в клинику?<span class="caret"></span></div>
+                  <div class="accordion__description" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div itemprop="text">Если ремиссия вашего знакомого длится уже долгое время - ему очень повезло. Как правило, при самостоятельном лечении срывы случаются очень часто. Зависимость - это болезнь, и обычно без помощи врача справиться с ней невозможно.</div></div>
+                </div>
+                <div class="item accordion" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="accordion__header" itemprop="name">Я хочу отказаться от алкоголя, но мне не хватает воли. Уже страдает здоровье, работа и личная жизнь, но бросить пить не получается. Поможет ли мне лечение?<span class="caret"></span></div>
+                  <div class="accordion__description" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div itemprop="text">Конечно, поможет! Вас обследуют квалифицированные специалисты, включая психологов, они помогут вам не только справиться с последствиями зависимости, но и найти силы отказаться от пагубной привычки навсегда.</div></div>
+                </div>
+                <div class="item accordion" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="accordion__header" itemprop="name">Мой ребенок учится в ВУЗе, и его отчислят, если я отправлю его на лечение! Как быть?<span class="caret"></span></div>
+                  <div class="accordion__description" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div itemprop="text">Смело отправляйте его на лечение в нашу клинику. Все обращения анонимны, в учебном заведении об этом не узнают - мы не отправляем отчетов о работе ни в какие инстанции и не ставим пометок в общих документах.</div></div>
+                </div>
+                <div class="item accordion" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="accordion__header" itemprop="name">Мой ребенок поздно возвращается домой. Алкоголем от него не пахнет, но поведение стало странным и подозрительным. В этом могут быть виноваты наркотики?<span class="caret"></span></div>
+                  <div class="accordion__description" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div itemprop="text">Да, есть вероятность наркомании. Чтобы не гадать, лучше сдать анализы и исключить главные риски. В нашей клинике можно сделать это анонимно, при этом дальшейние решения, будь то решение о лечении или госпитализации, останутся вам.</div></div>
+                </div>
+                <div class="item accordion" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="accordion__header" itemprop="name">Мой брат лечился от зависимости народными средствами, но вместо избавления получил только проблемы со здоровьем. Не будет ли клиническое лечение таким же опасным?<span class="caret"></span></div>
+                  <div class="accordion__description" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div itemprop="text">Нет, именно комплексный медицинский подход к проблеме способен ее решить. "Народные" средства часто бесполезны, а то и опасны. На стороне наших методик годы практики и исследований, конкретная терапия подбирается с учетом результатов диагностики. Побочных эффектов не будет, а зависимость уйдет в прошлое.</div></div>
+                </div>
+                <div class="item accordion" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="accordion__header" itemprop="name">Моя жена часто позволяла себе выпить, но теперь начала истерить и устраивать скандалы "под градусом". Что с ней?<span class="caret"></span></div>
+                  <div class="accordion__description" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div itemprop="text">Это следующая стадия зависимости. Вашей жене срочно нужна помощь врача и полный отказ от алкоголя.</div></div>
+                </div>
+                <div class="item accordion" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="accordion__header" itemprop="name">У мужа проблемы с почками, поэтому ему срочно необходимо бросить пить. Но все способы лечения имеют противопоказания, что нам делать?<span class="caret"></span></div>
+                  <div class="accordion__description" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div itemprop="text">В любом случае лечение подбирается индивидуально, с учетом непереносимости определенных лекарств и методик. Всегда есть шанс, обратитесь в нашу клинику - и мы избавим вашего мужа от пагубной привычки.</div></div>
+                </div>
+                <div class="item accordion" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="accordion__header" itemprop="name">Сколько займет лечение, если я хочу навсегда избавиться от зависимости?<span class="caret"></span></div>
+                  <div class="accordion__description" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div itemprop="text">Каждый случай индивидуален. Вместе с периодом реабилитации лечение может занимать до полугода или с успехом завершиться через 2-3 месяца.</div></div>
+                </div>
+                <div class="item accordion" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="accordion__header" itemprop="name">Обязательно ли мне ложиться в клинику после вызова врача на дом?<span class="caret"></span></div>
+                  <div class="accordion__description" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div itemprop="text">Мы предлагаем такую возможность каждому пациенту, это очень желательно. Всесторонняя помощь и надзор медиков могут ускорить выздоровление. Но решение остается за пациентом и\или его опекуном.</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s-article">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <article class="is-hidden_NOT">
+                <div class="wrapper">
+            <h2>Клиника "Свобода", Ростов-на-Дону</h2>            <div>
+                  <p>От паталогических зависимостей страдают миллионы людей по всему миру. Статистика по разным данным немного разнится, но примерное количество так или иначе зависимых людей приближается к 165 000 000. Однако в этой цифре учтены только люди, обратившиеся за помощью - зависимых в мире значительно больше.</p>
+<p>Есть экспертное мнение, что зависимость неизлечима. Отчасти это правда, но правильное лечение способно ввести ее в ремиссию - при условии, что пациент будет соблюдать рекомендации специалиста и избегать ситуаций, провоцирующих срыв. В таком случае человек может прожить всю жизнь, больше не вернувшись к прежнему состоянию.</p>
+                  <h3>Лечение алкогольной и наркотической зависимости в Ростове-на-Дону</h3>
+                  <p>Клиника "Свобода" занимается диагностированием и всесторонним лечением зависимостей разного рода. В том числе к нам обращаются люди, страдающие от следующих проблем:</p>
+                  <ol>
+                    <li>Наркомания - зависимость от психоактивных веществ как синтетического, так и натурального происхождения.</li>
+                    <li>Алкоголизм - болезненная зависимость от частого употребления спиртосодержащих напитков. </li>
+                    <li>Игромания - нехимическая зависимость, провоцирующая зависимого увлекаться азартными или онлайн-играми в ущерб полноценной социальной жизни.</li>
+                    <li>Курение - тяга к употреблению табака, от которого зависимый не может отказаться, даже если пагубная привычка представляет реальную опасность для его жизни.</li>
+                  </ol>
+<p>Зависимости развиваются по единому принципу, и подходы к лечению схожи. Целью врача-специалиста является снятие тяги к объекту зависимости, восстановить психическое и физическое здоровье человека, помочь ему взять зависимость под контроль и научиться избегать факторов, провоцирующих рецидив.</p>
+                  <p>Специалисты клиники "Свобода" имеют большой опыт проработки даже серьезных и затяжных случаев зависимости. Наши врачи находят индивидуальный подход в уникальном случае каждого пациента.</p>
+<div class="video_block">
+</div></div>                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s-image">
+        <div class="s-image__wrapper">
+          <picture><img class="s-image__image" src="{% static 'netcat_template/template/new_design/assets/upload/shutterstock_5830659851.webp' %}" alt=""></picture>
+        </div>
+        <div class="s-image__bg"></div>
+      </section>
+      <section class="s-article">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <article class="is-hidden_NOT">
+                <div class="wrapper">
+            <h2>Срочная помощь нарколога в г.Ростов-на-Дону</h2>            <div>
+<p>Любая зависимость развивается по спирали, как правило, серьезные осложнения происходят регулярно и циклично. При этом возможны психические проблемы, делающие невозможной транспортировку пациента в клинику. В этом случае стоит вызвать специалиста на дом. Государственные больницы тоже могут прийти на помощь, но обращение в нашу клинику имеет несколько весомых плюсов:</p>
+                <ul>
+                  <li>На вызов прибывают не только санитары, но и квалифицированный нарколог;</li>
+                  <li>Наша бригада лучше укомплектована оборудованием и медикаментами;</li>
+                  <li>Все обращения остаются анонимными, мы не отправляем обязательных отчетов и сохраним ваше горе в тайне.</li>
+                </ul>
+                  <blockquote>
+                                    <p>Частная клиника - лучший вариант для тех, кто заботится о своей репутации и здоровье. В конечном счете лучшее оснащение бригады может сэкономить много времени или даже спасти жизнь.</p>
+
+                  </blockquote>
+                <p>Вызов врача на дом необходим, если вы или ваш близкий:</p>
+                <ul>
+                  <li>Находитесь в состоянии "ломки" или "похмелья", испытываете тягу к объекту зависимости, которую не можете побороть самостоятельно;</li>
+                  <li>Находитесь в остром периоде зависимости ("запое");</li>
+                  <li>Переживаете любые осложнения или необычные болезненные ощущения в острой фазе зависимости.</li>
+                </ul>
+                <p>Помимо запоев существуют также "псевдозапои", или "запои выходного дня". Они не представляют такой серьезной угрозы, но все же опасны для пациента и его окружения. Отличие от классического "запоя" будет в возможности пациента взять себя в руки и прекратить употребление спиртного, чтобы пойти на работу или выполнить иные обязанности. Человек в более тяжелой стадии алкоголизма не сможет себя остановить, даже если захочет. Однако помощь специалистов может привести пациента в норму значительно быстрее: срок, который потребуется для полного физического восстановления, варьируется от нескольких часов до двух-трех дней и зависит от степени опьянения и продолжительности запоя.</p>
+                <p>Домашнее и стационарное лечение отличаются глубиной диагностики и возможностью круглосуточного присутствия специалиста. При этом домашнее лечение обойдется дешевле, по тем же причинам. Увы, невозможно выполнить все необходимые процедуры, если пациент находится дома, а не в клинике. Однако у такого способа есть свои плюсы: </p>
+                <ul>
+                  <li>Он всегда абсолютно анонимен;</li>
+                  <li>Пациенту в привычном месте значительно комфортней;</li>
+                  <li>Он может продолжать жить своей обычной жизнью: работать, общаться с близкими, заботиться о детях и пожилых родственниках.</li></ul>
+                <p>По законам Российской Федерации желание самого пациента имеет большое значение в вопросах, касающихся госпитализации. Поэтому обязательно поговорите с близким, нуждающимся в помощи, и предупредите, что скоро прибудет врач, чтобы улучить его состояние.</p></div>                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+{% endblock %}
