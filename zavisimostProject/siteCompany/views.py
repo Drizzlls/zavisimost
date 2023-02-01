@@ -14,6 +14,7 @@ def index(request):
             data = f'Пришел новый лид с сайта!\nИмя: {request.POST.get("name","ошибка")}\nТелефон: {request.POST.get("phone","ошибка")}'
 
             r = requests.get(f'https://api.telegram.org/bot5997431556:AAHstK-PgpAGwp31A4xJirfO4QWRNatGDmk/sendMessage?chat_id=428552889&text={data}')
+            r = requests.get(f'https://api.telegram.org/bot5997431556:AAHstK-PgpAGwp31A4xJirfO4QWRNatGDmk/sendMessage?chat_id=5901410161&text={data}')
             return redirect('ths')
         except Exception as e:
             data = f'Пришел новый лид с сайта!\nИмя: {request.POST.get("name", "ошибка")}\nТелефон: {request.POST.get("phone", "ошибка")}'
