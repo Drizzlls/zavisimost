@@ -6,6 +6,7 @@ urlpatterns = [
     path('krasnodar/', index,name='krd'),
     path('nizhnij-novogorod/', index,name='nn'),
     path('volgograd/', index,name='volgograd'),
+    path('perm/', index, name='perm'),
     path('tu_page/', thsPage, name='ths'),
     path('privacy-policy/', privacy, name='privacy')
 ]

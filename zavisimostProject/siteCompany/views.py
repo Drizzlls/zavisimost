@@ -41,9 +41,13 @@ def index(request):
 
         '/volgograd/': {'footer': 'г. Волгоград, ул. Козловская, д.4',
                        'city':'Волгоград',
-                        'license': ['license/volgograd/1.jpg','license/volgograd/2.jpg', 'license/volgograd/3.jpg']}
+                        'license': ['license/volgograd/1.jpg', 'license/volgograd/2.jpg', 'license/volgograd/3.jpg']},
+
+        '/perm/': {'footer': 'Пермский край, г. Пермь, ул. Газеты Звезда, д. 75',
+                        'city': 'Пермь',
+                        'license': ['license/perm/1.jpg', 'license/perm/2.jpg', 'license/perm/3.jpg']}
     }
-    return render(request, 'siteCompany/index/index.html',{'utm_campaign':request.GET.get('utm_campaign',' '),'cityData':cityData.get(request.path,' ')})
+    return render(request, 'siteCompany/index/index.html', {'utm_campaign':request.GET.get('utm_campaign',' '), 'cityData':cityData.get(request.path,' ')})
 
 
 def thsPage(request):
